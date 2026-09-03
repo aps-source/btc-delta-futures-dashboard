@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:20:49.242698+00:00",
+  "generated_at": "2026-09-03T16:24:29.581544+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
   "last_closed_bar": "2026-09-03T15:00:00+00:00",
@@ -24,22 +24,10 @@
       {
         "label": "60m EMA stack",
         "met": true
-      },
-      {
-        "label": "Above prev-day high",
-        "met": true
-      },
-      {
-        "label": "Above Daily R1",
-        "met": true
-      },
-      {
-        "label": "Narrow CPR (trending bias)",
-        "met": true
       }
     ],
-    "buy_count": 5,
-    "buy_total": 6,
+    "buy_count": 2,
+    "buy_total": 3,
     "sell": [
       {
         "label": "Daily EMA stack",
@@ -52,22 +40,10 @@
       {
         "label": "60m EMA stack",
         "met": false
-      },
-      {
-        "label": "Below prev-day low",
-        "met": false
-      },
-      {
-        "label": "Below Daily S1",
-        "met": false
-      },
-      {
-        "label": "Narrow CPR (trending bias)",
-        "met": true
       }
     ],
-    "sell_count": 1,
-    "sell_total": 6
+    "sell_count": 0,
+    "sell_total": 3
   },
   "current_levels": {
     "pivot": 77089.17,
@@ -95,66 +71,107 @@
     "entry_criteria": [
       "Daily EMA stack (5>26>50)",
       "4h EMA stack (5>26>50)",
-      "60m EMA stack (5>26>50)",
-      "Above prev-day high",
-      "Above Daily R1",
-      "Narrow CPR (trending bias, <0.5% width)"
+      "60m EMA stack (5>26>50)"
     ],
     "exit_criteria": "1h close crosses back through a dedicated EMA-60 (1h) -- long exits below it, short exits above it.",
-    "mirror_note": "Short side is the exact mirror of every condition above (descending EMA stacks, below prev-day low, below Daily S1, same Narrow-CPR gate)."
+    "mirror_note": "Short side is the exact mirror of every condition above (descending EMA stacks on all three tiers)."
   },
   "backtest": {
     "report_start": "2026-01-01T00:00:00+00:00",
     "report_end": "2026-09-03T00:00:00+00:00",
     "warmup_start": "2025-09-01T00:00:00+00:00",
     "summary": {
-      "count": 24,
-      "wins": 6,
-      "losses": 18,
-      "win_rate": 25.0,
-      "total_points": 2427.0,
-      "avg_points": 101.12,
+      "count": 61,
+      "wins": 15,
+      "losses": 46,
+      "win_rate": 24.6,
+      "total_points": 3667.0,
+      "avg_points": 60.11,
       "best": 8988.5,
-      "worst": -1873.0,
-      "avg_bars_held": 34.8,
-      "avg_pct": -0.019,
-      "total_pct": -0.45,
-      "best_pct": 10.211,
-      "worst_pct": -2.866,
-      "long_count": 7,
-      "short_count": 17
+      "worst": -1721.5,
+      "avg_bars_held": 25.3,
+      "avg_pct": 0.02,
+      "total_pct": 1.22,
+      "best_pct": 10.427,
+      "worst_pct": -2.632,
+      "long_count": 17,
+      "short_count": 44
     },
     "max_drawdown": {
-      "max_dd_points": 9652.5,
-      "max_dd_pct_of_peak": 79.91
+      "max_dd_points": 13309.5,
+      "max_dd_pct_of_peak": 90.96
     },
     "condition_hit_rates": {
       "bars_in_window": 5880,
       "buy: Daily EMA stack": 11.92,
       "buy: 4h EMA stack": 22.76,
       "buy: 60m EMA stack": 23.57,
-      "buy: Above prev-day high": 17.33,
-      "buy: Above Daily R1": 13.79,
-      "buy: Narrow CPR (trending bias)": 56.73,
-      "buy: ALL 6 (composite)": 1.463,
+      "buy: ALL 3 (composite)": 4.592,
       "sell: Daily EMA stack": 29.32,
       "sell: 4h EMA stack": 22.7,
       "sell: 60m EMA stack": 23.13,
-      "sell: Below prev-day low": 16.36,
-      "sell: Below Daily S1": 12.99,
-      "sell: Narrow CPR (trending bias)": 56.73,
-      "sell: ALL 6 (composite)": 1.99
+      "sell: ALL 3 (composite)": 10.782
     },
     "trades": [
       {
         "direction": "SHORT",
-        "entry_time": "2026-01-25T06:00:00+00:00",
-        "entry_price": 88810.0,
+        "entry_time": "2026-01-22T14:00:00+00:00",
+        "entry_price": 89073.0,
+        "exit_time": "2026-01-23T16:00:00+00:00",
+        "exit_price": 90085.0,
+        "points": -1012.0,
+        "pct": -1.136,
+        "bars_held": 25
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-24T00:00:00+00:00",
+        "entry_price": 89414.0,
+        "exit_time": "2026-01-24T04:00:00+00:00",
+        "exit_price": 89807.0,
+        "points": -393.0,
+        "pct": -0.44,
+        "bars_held": 3
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-24T09:00:00+00:00",
+        "entry_price": 89567.5,
         "exit_time": "2026-01-26T18:00:00+00:00",
         "exit_price": 88356.0,
-        "points": 454.0,
-        "pct": 0.511,
-        "bars_held": 35
+        "points": 1211.5,
+        "pct": 1.353,
+        "bars_held": 56
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-26T20:00:00+00:00",
+        "entry_price": 87585.0,
+        "exit_time": "2026-01-26T23:00:00+00:00",
+        "exit_price": 88300.5,
+        "points": -715.5,
+        "pct": -0.817,
+        "bars_held": 2
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-27T10:00:00+00:00",
+        "entry_price": 87754.0,
+        "exit_time": "2026-01-27T16:00:00+00:00",
+        "exit_price": 88603.0,
+        "points": -849.0,
+        "pct": -0.967,
+        "bars_held": 5
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-27T17:00:00+00:00",
+        "entry_price": 87510.5,
+        "exit_time": "2026-01-27T18:00:00+00:00",
+        "exit_price": 88246.5,
+        "points": -736.0,
+        "pct": -0.841,
+        "bars_held": 0
       },
       {
         "direction": "SHORT",
@@ -168,53 +185,93 @@
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-02-04T17:00:00+00:00",
-        "entry_price": 72540.0,
+        "entry_time": "2026-02-03T11:00:00+00:00",
+        "entry_price": 78040.0,
         "exit_time": "2026-02-06T16:00:00+00:00",
         "exit_price": 69903.0,
-        "points": 2637.0,
-        "pct": 3.635,
-        "bars_held": 46
+        "points": 8137.0,
+        "pct": 10.427,
+        "bars_held": 76
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-02-11T04:00:00+00:00",
-        "entry_price": 67542.0,
+        "entry_time": "2026-02-07T08:00:00+00:00",
+        "entry_price": 68498.0,
+        "exit_time": "2026-02-07T18:00:00+00:00",
+        "exit_price": 69475.5,
+        "points": -977.5,
+        "pct": -1.427,
+        "bars_held": 9
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-10T06:00:00+00:00",
+        "entry_price": 68870.5,
+        "exit_time": "2026-02-10T17:00:00+00:00",
+        "exit_price": 69870.0,
+        "points": -999.5,
+        "pct": -1.451,
+        "bars_held": 10
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-10T18:00:00+00:00",
+        "entry_price": 68867.5,
         "exit_time": "2026-02-12T11:00:00+00:00",
         "exit_price": 68117.5,
-        "points": -575.5,
-        "pct": -0.852,
-        "bars_held": 30
+        "points": 750.0,
+        "pct": 1.089,
+        "bars_held": 40
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-02-12T17:00:00+00:00",
-        "entry_price": 65363.5,
+        "entry_time": "2026-02-12T16:00:00+00:00",
+        "entry_price": 65825.5,
         "exit_time": "2026-02-13T13:00:00+00:00",
         "exit_price": 67236.5,
-        "points": -1873.0,
-        "pct": -2.866,
-        "bars_held": 19
+        "points": -1411.0,
+        "pct": -2.144,
+        "bars_held": 20
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-02-17T14:00:00+00:00",
-        "entry_price": 66846.5,
+        "entry_time": "2026-02-16T05:00:00+00:00",
+        "entry_price": 68354.5,
+        "exit_time": "2026-02-16T09:00:00+00:00",
+        "exit_price": 68960.0,
+        "points": -605.5,
+        "pct": -0.886,
+        "bars_held": 3
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-16T13:00:00+00:00",
+        "entry_price": 68347.5,
+        "exit_time": "2026-02-16T21:00:00+00:00",
+        "exit_price": 68848.5,
+        "points": -501.0,
+        "pct": -0.733,
+        "bars_held": 7
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-17T05:00:00+00:00",
+        "entry_price": 68207.0,
         "exit_time": "2026-02-18T09:00:00+00:00",
         "exit_price": 68128.0,
-        "points": -1281.5,
-        "pct": -1.917,
-        "bars_held": 18
+        "points": 79.0,
+        "pct": 0.116,
+        "bars_held": 27
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-02-18T18:00:00+00:00",
-        "entry_price": 66330.0,
+        "entry_time": "2026-02-18T11:00:00+00:00",
+        "entry_price": 67335.5,
         "exit_time": "2026-02-20T00:00:00+00:00",
         "exit_price": 67188.5,
-        "points": -858.5,
-        "pct": -1.294,
-        "bars_held": 29
+        "points": 147.0,
+        "pct": 0.218,
+        "bars_held": 36
       },
       {
         "direction": "SHORT",
@@ -238,6 +295,66 @@
       },
       {
         "direction": "SHORT",
+        "entry_time": "2026-03-02T13:00:00+00:00",
+        "entry_price": 65412.5,
+        "exit_time": "2026-03-02T14:00:00+00:00",
+        "exit_price": 67134.0,
+        "points": -1721.5,
+        "pct": -2.632,
+        "bars_held": 0
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-03-09T00:00:00+00:00",
+        "entry_price": 66342.5,
+        "exit_time": "2026-03-09T05:00:00+00:00",
+        "exit_price": 67864.0,
+        "points": -1521.5,
+        "pct": -2.293,
+        "bars_held": 4
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-03-22T00:00:00+00:00",
+        "entry_price": 68900.0,
+        "exit_time": "2026-03-23T11:00:00+00:00",
+        "exit_price": 70071.0,
+        "points": -1171.0,
+        "pct": -1.7,
+        "bars_held": 34
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-03-27T00:00:00+00:00",
+        "entry_price": 68746.5,
+        "exit_time": "2026-03-30T02:00:00+00:00",
+        "exit_price": 67088.5,
+        "points": 1658.0,
+        "pct": 2.412,
+        "bars_held": 73
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-03-31T12:00:00+00:00",
+        "entry_price": 66632.0,
+        "exit_time": "2026-03-31T13:00:00+00:00",
+        "exit_price": 67232.0,
+        "points": -600.0,
+        "pct": -0.9,
+        "bars_held": 0
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-03-31T14:00:00+00:00",
+        "entry_price": 66544.5,
+        "exit_time": "2026-03-31T16:00:00+00:00",
+        "exit_price": 67636.5,
+        "points": -1092.0,
+        "pct": -1.641,
+        "bars_held": 1
+      },
+      {
+        "direction": "SHORT",
         "entry_time": "2026-04-02T08:00:00+00:00",
         "entry_price": 66410.5,
         "exit_time": "2026-04-04T06:00:00+00:00",
@@ -247,14 +364,64 @@
         "bars_held": 45
       },
       {
+        "direction": "SHORT",
+        "entry_time": "2026-04-05T12:00:00+00:00",
+        "entry_price": 66751.0,
+        "exit_time": "2026-04-05T15:00:00+00:00",
+        "exit_price": 67277.5,
+        "points": -526.5,
+        "pct": -0.789,
+        "bars_held": 2
+      },
+      {
         "direction": "LONG",
-        "entry_time": "2026-04-22T02:00:00+00:00",
-        "entry_price": 77566.0,
+        "entry_time": "2026-04-18T02:00:00+00:00",
+        "entry_price": 77260.5,
+        "exit_time": "2026-04-18T16:00:00+00:00",
+        "exit_price": 75869.5,
+        "points": -1391.0,
+        "pct": -1.8,
+        "bars_held": 13
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-20T20:00:00+00:00",
+        "entry_price": 76230.0,
+        "exit_time": "2026-04-21T14:00:00+00:00",
+        "exit_price": 75621.0,
+        "points": -609.0,
+        "pct": -0.799,
+        "bars_held": 17
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-21T23:00:00+00:00",
+        "entry_price": 76283.5,
         "exit_time": "2026-04-23T10:00:00+00:00",
         "exit_price": 77291.0,
-        "points": -275.0,
-        "pct": -0.355,
-        "bars_held": 31
+        "points": 1007.5,
+        "pct": 1.321,
+        "bars_held": 34
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-23T15:00:00+00:00",
+        "entry_price": 78319.0,
+        "exit_time": "2026-04-24T03:00:00+00:00",
+        "exit_price": 77594.0,
+        "points": -725.0,
+        "pct": -0.926,
+        "bars_held": 11
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-24T12:00:00+00:00",
+        "entry_price": 78240.0,
+        "exit_time": "2026-04-24T18:00:00+00:00",
+        "exit_price": 77480.0,
+        "points": -760.0,
+        "pct": -0.971,
+        "bars_held": 5
       },
       {
         "direction": "LONG",
@@ -297,6 +464,46 @@
         "bars_held": 4
       },
       {
+        "direction": "LONG",
+        "entry_time": "2026-05-11T11:00:00+00:00",
+        "entry_price": 81155.5,
+        "exit_time": "2026-05-12T03:00:00+00:00",
+        "exit_price": 81012.0,
+        "points": -143.5,
+        "pct": -0.177,
+        "bars_held": 15
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-05-14T21:00:00+00:00",
+        "entry_price": 81395.0,
+        "exit_time": "2026-05-15T05:00:00+00:00",
+        "exit_price": 80419.0,
+        "points": -976.0,
+        "pct": -1.199,
+        "bars_held": 7
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-05-15T07:00:00+00:00",
+        "entry_price": 80830.0,
+        "exit_time": "2026-05-15T09:00:00+00:00",
+        "exit_price": 80392.5,
+        "points": -437.5,
+        "pct": -0.541,
+        "bars_held": 1
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-03T00:00:00+00:00",
+        "entry_price": 66902.5,
+        "exit_time": "2026-06-07T06:00:00+00:00",
+        "exit_price": 62047.0,
+        "points": 4855.5,
+        "pct": 7.258,
+        "bars_held": 101
+      },
+      {
         "direction": "SHORT",
         "entry_time": "2026-06-09T15:00:00+00:00",
         "entry_price": 61038.0,
@@ -308,53 +515,153 @@
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-06-24T13:00:00+00:00",
-        "entry_price": 61331.0,
+        "entry_time": "2026-06-10T21:00:00+00:00",
+        "entry_price": 61238.0,
+        "exit_time": "2026-06-11T01:00:00+00:00",
+        "exit_price": 62333.0,
+        "points": -1095.0,
+        "pct": -1.788,
+        "bars_held": 3
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-19T02:00:00+00:00",
+        "entry_price": 62922.0,
+        "exit_time": "2026-06-20T01:00:00+00:00",
+        "exit_price": 63590.0,
+        "points": -668.0,
+        "pct": -1.062,
+        "bars_held": 22
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-23T08:00:00+00:00",
+        "entry_price": 62374.0,
         "exit_time": "2026-06-27T07:00:00+00:00",
         "exit_price": 60522.5,
-        "points": 808.5,
-        "pct": 1.318,
-        "bars_held": 65
+        "points": 1851.5,
+        "pct": 2.968,
+        "bars_held": 94
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-06-28T17:00:00+00:00",
-        "entry_price": 59497.5,
+        "entry_time": "2026-06-27T21:00:00+00:00",
+        "entry_price": 60131.0,
+        "exit_time": "2026-06-28T08:00:00+00:00",
+        "exit_price": 60374.5,
+        "points": -243.5,
+        "pct": -0.405,
+        "bars_held": 10
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-28T10:00:00+00:00",
+        "entry_price": 60075.5,
+        "exit_time": "2026-06-28T11:00:00+00:00",
+        "exit_price": 60315.0,
+        "points": -239.5,
+        "pct": -0.399,
+        "bars_held": 0
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-28T15:00:00+00:00",
+        "entry_price": 59826.5,
         "exit_time": "2026-06-29T06:00:00+00:00",
         "exit_price": 60051.0,
-        "points": -553.5,
-        "pct": -0.93,
-        "bars_held": 12
+        "points": -224.5,
+        "pct": -0.375,
+        "bars_held": 14
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-06-30T12:00:00+00:00",
-        "entry_price": 58370.5,
+        "entry_time": "2026-06-29T13:00:00+00:00",
+        "entry_price": 59513.0,
+        "exit_time": "2026-06-29T17:00:00+00:00",
+        "exit_price": 60612.0,
+        "points": -1099.0,
+        "pct": -1.847,
+        "bars_held": 3
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-30T01:00:00+00:00",
+        "entry_price": 59828.0,
         "exit_time": "2026-07-01T13:00:00+00:00",
         "exit_price": 59486.0,
-        "points": -1115.5,
-        "pct": -1.911,
-        "bars_held": 24
+        "points": 342.0,
+        "pct": 0.572,
+        "bars_held": 35
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-08-03T04:00:00+00:00",
-        "entry_price": 62796.5,
+        "entry_time": "2026-08-01T00:00:00+00:00",
+        "entry_price": 62969.0,
+        "exit_time": "2026-08-02T02:00:00+00:00",
+        "exit_price": 63341.0,
+        "points": -372.0,
+        "pct": -0.591,
+        "bars_held": 25
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-02T13:00:00+00:00",
+        "entry_price": 63086.5,
+        "exit_time": "2026-08-02T18:00:00+00:00",
+        "exit_price": 63501.5,
+        "points": -415.0,
+        "pct": -0.658,
+        "bars_held": 4
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-03T03:00:00+00:00",
+        "entry_price": 62853.0,
         "exit_time": "2026-08-03T14:00:00+00:00",
         "exit_price": 63926.0,
-        "points": -1129.5,
-        "pct": -1.799,
-        "bars_held": 9
+        "points": -1073.0,
+        "pct": -1.707,
+        "bars_held": 10
       },
       {
         "direction": "SHORT",
-        "entry_time": "2026-08-14T09:00:00+00:00",
-        "entry_price": 62750.0,
+        "entry_time": "2026-08-12T06:00:00+00:00",
+        "entry_price": 63646.0,
+        "exit_time": "2026-08-12T10:00:00+00:00",
+        "exit_price": 64126.0,
+        "points": -480.0,
+        "pct": -0.754,
+        "bars_held": 3
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-12T14:00:00+00:00",
+        "entry_price": 63393.5,
+        "exit_time": "2026-08-13T05:00:00+00:00",
+        "exit_price": 63916.5,
+        "points": -523.0,
+        "pct": -0.825,
+        "bars_held": 14
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-13T11:00:00+00:00",
+        "entry_price": 63458.5,
+        "exit_time": "2026-08-13T14:00:00+00:00",
+        "exit_price": 63933.0,
+        "points": -474.5,
+        "pct": -0.748,
+        "bars_held": 2
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-13T16:00:00+00:00",
+        "entry_price": 63132.0,
         "exit_time": "2026-08-16T16:00:00+00:00",
         "exit_price": 63362.5,
-        "points": -612.5,
-        "pct": -0.976,
-        "bars_held": 54
+        "points": -230.5,
+        "pct": -0.365,
+        "bars_held": 71
       },
       {
         "direction": "SHORT",
@@ -368,13 +675,23 @@
       },
       {
         "direction": "LONG",
-        "entry_time": "2026-08-27T08:00:00+00:00",
-        "entry_price": 79838.0,
+        "entry_time": "2026-08-21T00:00:00+00:00",
+        "entry_price": 73776.0,
+        "exit_time": "2026-08-25T20:00:00+00:00",
+        "exit_price": 78146.5,
+        "points": 4370.5,
+        "pct": 5.924,
+        "bars_held": 115
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-08-26T23:00:00+00:00",
+        "entry_price": 78970.5,
         "exit_time": "2026-08-28T09:00:00+00:00",
         "exit_price": 79250.5,
-        "points": -587.5,
-        "pct": -0.736,
-        "bars_held": 24
+        "points": 280.0,
+        "pct": 0.355,
+        "bars_held": 33
       },
       {
         "direction": "LONG",
@@ -385,151 +702,393 @@
         "points": -905.5,
         "pct": -1.142,
         "bars_held": 5
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-08-31T17:00:00+00:00",
+        "entry_price": 78870.0,
+        "exit_time": "2026-09-01T01:00:00+00:00",
+        "exit_price": 78356.5,
+        "points": -513.5,
+        "pct": -0.651,
+        "bars_held": 7
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-09-01T03:00:00+00:00",
+        "entry_price": 78764.5,
+        "exit_time": "2026-09-01T08:00:00+00:00",
+        "exit_price": 77878.0,
+        "points": -886.5,
+        "pct": -1.126,
+        "bars_held": 4
       }
     ],
     "equity_curve": [
       {
+        "time": "2026-01-23T16:00:00+00:00",
+        "cum_points": -1012.0,
+        "trade_points": -1012.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-01-24T04:00:00+00:00",
+        "cum_points": -1405.0,
+        "trade_points": -393.0,
+        "direction": "SHORT"
+      },
+      {
         "time": "2026-01-26T18:00:00+00:00",
-        "cum_points": 454.0,
-        "trade_points": 454.0,
+        "cum_points": -193.5,
+        "trade_points": 1211.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-01-26T23:00:00+00:00",
+        "cum_points": -909.0,
+        "trade_points": -715.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-01-27T16:00:00+00:00",
+        "cum_points": -1758.0,
+        "trade_points": -849.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-01-27T18:00:00+00:00",
+        "cum_points": -2494.0,
+        "trade_points": -736.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-03T00:00:00+00:00",
-        "cum_points": 9442.5,
+        "cum_points": 6494.5,
         "trade_points": 8988.5,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-06T16:00:00+00:00",
-        "cum_points": 12079.5,
-        "trade_points": 2637.0,
+        "cum_points": 14631.5,
+        "trade_points": 8137.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-07T18:00:00+00:00",
+        "cum_points": 13654.0,
+        "trade_points": -977.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-10T17:00:00+00:00",
+        "cum_points": 12654.5,
+        "trade_points": -999.5,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-12T11:00:00+00:00",
-        "cum_points": 11504.0,
-        "trade_points": -575.5,
+        "cum_points": 13404.5,
+        "trade_points": 750.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-13T13:00:00+00:00",
-        "cum_points": 9631.0,
-        "trade_points": -1873.0,
+        "cum_points": 11993.5,
+        "trade_points": -1411.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-16T09:00:00+00:00",
+        "cum_points": 11388.0,
+        "trade_points": -605.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-16T21:00:00+00:00",
+        "cum_points": 10887.0,
+        "trade_points": -501.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-18T09:00:00+00:00",
-        "cum_points": 8349.5,
-        "trade_points": -1281.5,
+        "cum_points": 10966.0,
+        "trade_points": 79.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-20T00:00:00+00:00",
-        "cum_points": 7491.0,
-        "trade_points": -858.5,
+        "cum_points": 11113.0,
+        "trade_points": 147.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-25T01:00:00+00:00",
-        "cum_points": 8996.0,
+        "cum_points": 12618.0,
         "trade_points": 1505.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-02-28T18:00:00+00:00",
-        "cum_points": 8633.0,
+        "cum_points": 12255.0,
         "trade_points": -363.0,
         "direction": "SHORT"
       },
       {
+        "time": "2026-03-02T14:00:00+00:00",
+        "cum_points": 10533.5,
+        "trade_points": -1721.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-03-09T05:00:00+00:00",
+        "cum_points": 9012.0,
+        "trade_points": -1521.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-03-23T11:00:00+00:00",
+        "cum_points": 7841.0,
+        "trade_points": -1171.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-03-30T02:00:00+00:00",
+        "cum_points": 9499.0,
+        "trade_points": 1658.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-03-31T13:00:00+00:00",
+        "cum_points": 8899.0,
+        "trade_points": -600.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-03-31T16:00:00+00:00",
+        "cum_points": 7807.0,
+        "trade_points": -1092.0,
+        "direction": "SHORT"
+      },
+      {
         "time": "2026-04-04T06:00:00+00:00",
-        "cum_points": 8061.5,
+        "cum_points": 7235.5,
         "trade_points": -571.5,
         "direction": "SHORT"
       },
       {
+        "time": "2026-04-05T15:00:00+00:00",
+        "cum_points": 6709.0,
+        "trade_points": -526.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-04-18T16:00:00+00:00",
+        "cum_points": 5318.0,
+        "trade_points": -1391.0,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-04-21T14:00:00+00:00",
+        "cum_points": 4709.0,
+        "trade_points": -609.0,
+        "direction": "LONG"
+      },
+      {
         "time": "2026-04-23T10:00:00+00:00",
-        "cum_points": 7786.5,
-        "trade_points": -275.0,
+        "cum_points": 5716.5,
+        "trade_points": 1007.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-04-24T03:00:00+00:00",
+        "cum_points": 4991.5,
+        "trade_points": -725.0,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-04-24T18:00:00+00:00",
+        "cum_points": 4231.5,
+        "trade_points": -760.0,
         "direction": "LONG"
       },
       {
         "time": "2026-04-27T05:00:00+00:00",
-        "cum_points": 7509.0,
+        "cum_points": 3954.0,
         "trade_points": -277.5,
         "direction": "LONG"
       },
       {
         "time": "2026-05-07T03:00:00+00:00",
-        "cum_points": 10107.5,
+        "cum_points": 6552.5,
         "trade_points": 2598.5,
         "direction": "LONG"
       },
       {
         "time": "2026-05-10T20:00:00+00:00",
-        "cum_points": 9922.0,
+        "cum_points": 6367.0,
         "trade_points": -185.5,
         "direction": "LONG"
       },
       {
         "time": "2026-05-11T03:00:00+00:00",
-        "cum_points": 8353.0,
+        "cum_points": 4798.0,
         "trade_points": -1569.0,
         "direction": "LONG"
       },
       {
+        "time": "2026-05-12T03:00:00+00:00",
+        "cum_points": 4654.5,
+        "trade_points": -143.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-05-15T05:00:00+00:00",
+        "cum_points": 3678.5,
+        "trade_points": -976.0,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-05-15T09:00:00+00:00",
+        "cum_points": 3241.0,
+        "trade_points": -437.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-06-07T06:00:00+00:00",
+        "cum_points": 8096.5,
+        "trade_points": 4855.5,
+        "direction": "SHORT"
+      },
+      {
         "time": "2026-06-10T15:00:00+00:00",
-        "cum_points": 6759.5,
+        "cum_points": 6503.0,
         "trade_points": -1593.5,
         "direction": "SHORT"
       },
       {
+        "time": "2026-06-11T01:00:00+00:00",
+        "cum_points": 5408.0,
+        "trade_points": -1095.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-20T01:00:00+00:00",
+        "cum_points": 4740.0,
+        "trade_points": -668.0,
+        "direction": "SHORT"
+      },
+      {
         "time": "2026-06-27T07:00:00+00:00",
-        "cum_points": 7568.0,
-        "trade_points": 808.5,
+        "cum_points": 6591.5,
+        "trade_points": 1851.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-28T08:00:00+00:00",
+        "cum_points": 6348.0,
+        "trade_points": -243.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-28T11:00:00+00:00",
+        "cum_points": 6108.5,
+        "trade_points": -239.5,
         "direction": "SHORT"
       },
       {
         "time": "2026-06-29T06:00:00+00:00",
-        "cum_points": 7014.5,
-        "trade_points": -553.5,
+        "cum_points": 5884.0,
+        "trade_points": -224.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-29T17:00:00+00:00",
+        "cum_points": 4785.0,
+        "trade_points": -1099.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-07-01T13:00:00+00:00",
-        "cum_points": 5899.0,
-        "trade_points": -1115.5,
+        "cum_points": 5127.0,
+        "trade_points": 342.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-02T02:00:00+00:00",
+        "cum_points": 4755.0,
+        "trade_points": -372.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-02T18:00:00+00:00",
+        "cum_points": 4340.0,
+        "trade_points": -415.0,
         "direction": "SHORT"
       },
       {
         "time": "2026-08-03T14:00:00+00:00",
-        "cum_points": 4769.5,
-        "trade_points": -1129.5,
+        "cum_points": 3267.0,
+        "trade_points": -1073.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-12T10:00:00+00:00",
+        "cum_points": 2787.0,
+        "trade_points": -480.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-13T05:00:00+00:00",
+        "cum_points": 2264.0,
+        "trade_points": -523.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-13T14:00:00+00:00",
+        "cum_points": 1789.5,
+        "trade_points": -474.5,
         "direction": "SHORT"
       },
       {
         "time": "2026-08-16T16:00:00+00:00",
-        "cum_points": 4157.0,
-        "trade_points": -612.5,
+        "cum_points": 1559.0,
+        "trade_points": -230.5,
         "direction": "SHORT"
       },
       {
         "time": "2026-08-17T01:00:00+00:00",
-        "cum_points": 3920.0,
+        "cum_points": 1322.0,
         "trade_points": -237.0,
         "direction": "SHORT"
       },
       {
+        "time": "2026-08-25T20:00:00+00:00",
+        "cum_points": 5692.5,
+        "trade_points": 4370.5,
+        "direction": "LONG"
+      },
+      {
         "time": "2026-08-28T09:00:00+00:00",
-        "cum_points": 3332.5,
-        "trade_points": -587.5,
+        "cum_points": 5972.5,
+        "trade_points": 280.0,
         "direction": "LONG"
       },
       {
         "time": "2026-08-30T22:00:00+00:00",
-        "cum_points": 2427.0,
+        "cum_points": 5067.0,
         "trade_points": -905.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-09-01T01:00:00+00:00",
+        "cum_points": 4553.5,
+        "trade_points": -513.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-09-01T08:00:00+00:00",
+        "cum_points": 3667.0,
+        "trade_points": -886.5,
         "direction": "LONG"
       }
     ],
