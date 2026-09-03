@@ -1,0 +1,572 @@
+{
+  "generated_at": "2026-09-03T15:59:13.567619+00:00",
+  "symbol": "BTCUSDT",
+  "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
+  "last_closed_bar": "2026-09-03T14:00:00+00:00",
+  "live_price": {
+    "time": "2026-09-03T15:00:00+00:00",
+    "price": 81141.5,
+    "is_forming_bar": true
+  },
+  "position": {
+    "status": "FLAT"
+  },
+  "current_conditions": {
+    "buy": [
+      {
+        "label": "Above pivot",
+        "met": true
+      },
+      {
+        "label": "Daily EMA stack",
+        "met": true
+      },
+      {
+        "label": "4h EMA stack",
+        "met": false
+      },
+      {
+        "label": "60m EMA stack",
+        "met": true
+      },
+      {
+        "label": "Above prev-day high",
+        "met": true
+      },
+      {
+        "label": "Above Daily R1",
+        "met": true
+      },
+      {
+        "label": "Narrow CPR (trending bias)",
+        "met": true
+      }
+    ],
+    "buy_count": 6,
+    "buy_total": 7,
+    "sell": [
+      {
+        "label": "Below pivot",
+        "met": false
+      },
+      {
+        "label": "Daily EMA stack",
+        "met": false
+      },
+      {
+        "label": "4h EMA stack",
+        "met": false
+      },
+      {
+        "label": "60m EMA stack",
+        "met": false
+      },
+      {
+        "label": "Below prev-day low",
+        "met": false
+      },
+      {
+        "label": "Below Daily S1",
+        "met": false
+      },
+      {
+        "label": "Narrow CPR (trending bias)",
+        "met": true
+      }
+    ],
+    "sell_count": 1,
+    "sell_total": 7
+  },
+  "current_levels": {
+    "pivot": 77089.17,
+    "r1": 77932.33,
+    "s1": 76421.83,
+    "prevDayHigh": 77756.5,
+    "prevDayLow": 76246.0,
+    "dailyCPR_pivot": 77089.17,
+    "dailyCPR_tc": 77177.08,
+    "dailyCPR_bc": 77001.25,
+    "dailyCPR_width_pct": 0.23,
+    "isNarrowCPR": 1.0,
+    "emaD5": 77713.69,
+    "emaD26": 73301.14,
+    "emaD50": 70262.91,
+    "ema4h5": 77619.13,
+    "ema4h26": 77826.8,
+    "ema4h50": 77564.6,
+    "ema1h5": 79011.68,
+    "ema1h26": 77891.85,
+    "ema1h50": 77765.03,
+    "ema1h60": 77774.53
+  },
+  "strategy": {
+    "entry_criteria": [
+      "Above pivot",
+      "Daily EMA stack (5>26>50)",
+      "4h EMA stack (5>26>50)",
+      "60m EMA stack (5>26>50)",
+      "Above prev-day high",
+      "Above Daily R1",
+      "Narrow CPR (trending bias, <0.5% width)"
+    ],
+    "exit_criteria": "1h close crosses back through a dedicated EMA-60 (1h) -- long exits below it, short exits above it.",
+    "mirror_note": "Short side is the exact mirror of every condition above (below pivot, descending EMA stacks, below prev-day low, below Daily S1, same Narrow-CPR gate)."
+  },
+  "backtest": {
+    "report_start": "2026-01-01T00:00:00+00:00",
+    "report_end": "2026-09-03T00:00:00+00:00",
+    "warmup_start": "2025-09-01T00:00:00+00:00",
+    "summary": {
+      "count": 24,
+      "wins": 6,
+      "losses": 18,
+      "win_rate": 25.0,
+      "total_points": 2427.0,
+      "avg_points": 101.12,
+      "best": 8988.5,
+      "worst": -1873.0,
+      "avg_bars_held": 34.8,
+      "avg_pct": -0.019,
+      "total_pct": -0.45,
+      "best_pct": 10.211,
+      "worst_pct": -2.866,
+      "long_count": 7,
+      "short_count": 17
+    },
+    "max_drawdown": {
+      "max_dd_points": 9652.5,
+      "max_dd_pct_of_peak": 79.91
+    },
+    "condition_hit_rates": {
+      "bars_in_window": 5880,
+      "buy: Above pivot": 50.78,
+      "buy: Daily EMA stack": 11.92,
+      "buy: 4h EMA stack": 22.76,
+      "buy: 60m EMA stack": 23.57,
+      "buy: Above prev-day high": 17.33,
+      "buy: Above Daily R1": 13.79,
+      "buy: Narrow CPR (trending bias)": 56.73,
+      "buy: ALL 7 (composite)": 1.463,
+      "sell: Below pivot": 49.22,
+      "sell: Daily EMA stack": 29.32,
+      "sell: 4h EMA stack": 22.7,
+      "sell: 60m EMA stack": 23.13,
+      "sell: Below prev-day low": 16.36,
+      "sell: Below Daily S1": 12.99,
+      "sell: Narrow CPR (trending bias)": 56.73,
+      "sell: ALL 7 (composite)": 1.99
+    },
+    "trades": [
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-25T06:00:00+00:00",
+        "entry_price": 88810.0,
+        "exit_time": "2026-01-26T18:00:00+00:00",
+        "exit_price": 88356.0,
+        "points": 454.0,
+        "pct": 0.511,
+        "bars_held": 35
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-01-29T08:00:00+00:00",
+        "entry_price": 88028.5,
+        "exit_time": "2026-02-03T00:00:00+00:00",
+        "exit_price": 79040.0,
+        "points": 8988.5,
+        "pct": 10.211,
+        "bars_held": 111
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-04T17:00:00+00:00",
+        "entry_price": 72540.0,
+        "exit_time": "2026-02-06T16:00:00+00:00",
+        "exit_price": 69903.0,
+        "points": 2637.0,
+        "pct": 3.635,
+        "bars_held": 46
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-11T04:00:00+00:00",
+        "entry_price": 67542.0,
+        "exit_time": "2026-02-12T11:00:00+00:00",
+        "exit_price": 68117.5,
+        "points": -575.5,
+        "pct": -0.852,
+        "bars_held": 30
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-12T17:00:00+00:00",
+        "entry_price": 65363.5,
+        "exit_time": "2026-02-13T13:00:00+00:00",
+        "exit_price": 67236.5,
+        "points": -1873.0,
+        "pct": -2.866,
+        "bars_held": 19
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-17T14:00:00+00:00",
+        "entry_price": 66846.5,
+        "exit_time": "2026-02-18T09:00:00+00:00",
+        "exit_price": 68128.0,
+        "points": -1281.5,
+        "pct": -1.917,
+        "bars_held": 18
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-18T18:00:00+00:00",
+        "entry_price": 66330.0,
+        "exit_time": "2026-02-20T00:00:00+00:00",
+        "exit_price": 67188.5,
+        "points": -858.5,
+        "pct": -1.294,
+        "bars_held": 29
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-22T20:00:00+00:00",
+        "entry_price": 67375.0,
+        "exit_time": "2026-02-25T01:00:00+00:00",
+        "exit_price": 65870.0,
+        "points": 1505.0,
+        "pct": 2.234,
+        "bars_held": 52
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-02-27T21:00:00+00:00",
+        "entry_price": 65502.5,
+        "exit_time": "2026-02-28T18:00:00+00:00",
+        "exit_price": 65865.5,
+        "points": -363.0,
+        "pct": -0.554,
+        "bars_held": 20
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-04-02T08:00:00+00:00",
+        "entry_price": 66410.5,
+        "exit_time": "2026-04-04T06:00:00+00:00",
+        "exit_price": 66982.0,
+        "points": -571.5,
+        "pct": -0.861,
+        "bars_held": 45
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-22T02:00:00+00:00",
+        "entry_price": 77566.0,
+        "exit_time": "2026-04-23T10:00:00+00:00",
+        "exit_price": 77291.0,
+        "points": -275.0,
+        "pct": -0.355,
+        "bars_held": 31
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-04-26T07:00:00+00:00",
+        "entry_price": 78030.5,
+        "exit_time": "2026-04-27T05:00:00+00:00",
+        "exit_price": 77753.0,
+        "points": -277.5,
+        "pct": -0.356,
+        "bars_held": 21
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-05-01T16:00:00+00:00",
+        "entry_price": 78238.5,
+        "exit_time": "2026-05-07T03:00:00+00:00",
+        "exit_price": 80837.0,
+        "points": 2598.5,
+        "pct": 3.321,
+        "bars_held": 130
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-05-09T17:00:00+00:00",
+        "entry_price": 80768.5,
+        "exit_time": "2026-05-10T20:00:00+00:00",
+        "exit_price": 80583.0,
+        "points": -185.5,
+        "pct": -0.23,
+        "bars_held": 26
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-05-10T22:00:00+00:00",
+        "entry_price": 82055.0,
+        "exit_time": "2026-05-11T03:00:00+00:00",
+        "exit_price": 80486.0,
+        "points": -1569.0,
+        "pct": -1.912,
+        "bars_held": 4
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-09T15:00:00+00:00",
+        "entry_price": 61038.0,
+        "exit_time": "2026-06-10T15:00:00+00:00",
+        "exit_price": 62631.5,
+        "points": -1593.5,
+        "pct": -2.611,
+        "bars_held": 23
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-24T13:00:00+00:00",
+        "entry_price": 61331.0,
+        "exit_time": "2026-06-27T07:00:00+00:00",
+        "exit_price": 60522.5,
+        "points": 808.5,
+        "pct": 1.318,
+        "bars_held": 65
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-28T17:00:00+00:00",
+        "entry_price": 59497.5,
+        "exit_time": "2026-06-29T06:00:00+00:00",
+        "exit_price": 60051.0,
+        "points": -553.5,
+        "pct": -0.93,
+        "bars_held": 12
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-06-30T12:00:00+00:00",
+        "entry_price": 58370.5,
+        "exit_time": "2026-07-01T13:00:00+00:00",
+        "exit_price": 59486.0,
+        "points": -1115.5,
+        "pct": -1.911,
+        "bars_held": 24
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-03T04:00:00+00:00",
+        "entry_price": 62796.5,
+        "exit_time": "2026-08-03T14:00:00+00:00",
+        "exit_price": 63926.0,
+        "points": -1129.5,
+        "pct": -1.799,
+        "bars_held": 9
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-14T09:00:00+00:00",
+        "entry_price": 62750.0,
+        "exit_time": "2026-08-16T16:00:00+00:00",
+        "exit_price": 63362.5,
+        "points": -612.5,
+        "pct": -0.976,
+        "bars_held": 54
+      },
+      {
+        "direction": "SHORT",
+        "entry_time": "2026-08-16T21:00:00+00:00",
+        "entry_price": 62883.5,
+        "exit_time": "2026-08-17T01:00:00+00:00",
+        "exit_price": 63120.5,
+        "points": -237.0,
+        "pct": -0.377,
+        "bars_held": 3
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-08-27T08:00:00+00:00",
+        "entry_price": 79838.0,
+        "exit_time": "2026-08-28T09:00:00+00:00",
+        "exit_price": 79250.5,
+        "points": -587.5,
+        "pct": -0.736,
+        "bars_held": 24
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-08-30T16:00:00+00:00",
+        "entry_price": 79283.0,
+        "exit_time": "2026-08-30T22:00:00+00:00",
+        "exit_price": 78377.5,
+        "points": -905.5,
+        "pct": -1.142,
+        "bars_held": 5
+      }
+    ],
+    "equity_curve": [
+      {
+        "time": "2026-01-26T18:00:00+00:00",
+        "cum_points": 454.0,
+        "trade_points": 454.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-03T00:00:00+00:00",
+        "cum_points": 9442.5,
+        "trade_points": 8988.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-06T16:00:00+00:00",
+        "cum_points": 12079.5,
+        "trade_points": 2637.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-12T11:00:00+00:00",
+        "cum_points": 11504.0,
+        "trade_points": -575.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-13T13:00:00+00:00",
+        "cum_points": 9631.0,
+        "trade_points": -1873.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-18T09:00:00+00:00",
+        "cum_points": 8349.5,
+        "trade_points": -1281.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-20T00:00:00+00:00",
+        "cum_points": 7491.0,
+        "trade_points": -858.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-25T01:00:00+00:00",
+        "cum_points": 8996.0,
+        "trade_points": 1505.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-02-28T18:00:00+00:00",
+        "cum_points": 8633.0,
+        "trade_points": -363.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-04-04T06:00:00+00:00",
+        "cum_points": 8061.5,
+        "trade_points": -571.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-04-23T10:00:00+00:00",
+        "cum_points": 7786.5,
+        "trade_points": -275.0,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-04-27T05:00:00+00:00",
+        "cum_points": 7509.0,
+        "trade_points": -277.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-05-07T03:00:00+00:00",
+        "cum_points": 10107.5,
+        "trade_points": 2598.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-05-10T20:00:00+00:00",
+        "cum_points": 9922.0,
+        "trade_points": -185.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-05-11T03:00:00+00:00",
+        "cum_points": 8353.0,
+        "trade_points": -1569.0,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-06-10T15:00:00+00:00",
+        "cum_points": 6759.5,
+        "trade_points": -1593.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-27T07:00:00+00:00",
+        "cum_points": 7568.0,
+        "trade_points": 808.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-06-29T06:00:00+00:00",
+        "cum_points": 7014.5,
+        "trade_points": -553.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-07-01T13:00:00+00:00",
+        "cum_points": 5899.0,
+        "trade_points": -1115.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-03T14:00:00+00:00",
+        "cum_points": 4769.5,
+        "trade_points": -1129.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-16T16:00:00+00:00",
+        "cum_points": 4157.0,
+        "trade_points": -612.5,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-17T01:00:00+00:00",
+        "cum_points": 3920.0,
+        "trade_points": -237.0,
+        "direction": "SHORT"
+      },
+      {
+        "time": "2026-08-28T09:00:00+00:00",
+        "cum_points": 3332.5,
+        "trade_points": -587.5,
+        "direction": "LONG"
+      },
+      {
+        "time": "2026-08-30T22:00:00+00:00",
+        "cum_points": 2427.0,
+        "trade_points": -905.5,
+        "direction": "LONG"
+      }
+    ],
+    "open_trade_at_window_end": null
+  },
+  "live": {
+    "live_start": "2026-09-03T00:00:00+00:00",
+    "summary": {
+      "count": 0,
+      "wins": 0,
+      "losses": 0,
+      "win_rate": null,
+      "total_points": 0.0,
+      "avg_points": null,
+      "best": null,
+      "worst": null,
+      "avg_bars_held": null,
+      "avg_pct": null,
+      "total_pct": null,
+      "best_pct": null,
+      "worst_pct": null,
+      "long_count": 0,
+      "short_count": 0
+    },
+    "trades": [],
+    "equity_curve": [],
+    "open_trade": null
+  }
+}
