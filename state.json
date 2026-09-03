@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T16:09:45.759579+00:00",
+  "generated_at": "2026-09-03T16:19:09.876326+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
   "last_closed_bar": "2026-09-03T15:00:00+00:00",
@@ -13,10 +13,6 @@
   },
   "current_conditions": {
     "buy": [
-      {
-        "label": "Above pivot",
-        "met": true
-      },
       {
         "label": "Daily EMA stack",
         "met": true
@@ -42,13 +38,9 @@
         "met": true
       }
     ],
-    "buy_count": 6,
-    "buy_total": 7,
+    "buy_count": 5,
+    "buy_total": 6,
     "sell": [
-      {
-        "label": "Below pivot",
-        "met": false
-      },
       {
         "label": "Daily EMA stack",
         "met": false
@@ -75,7 +67,7 @@
       }
     ],
     "sell_count": 1,
-    "sell_total": 7
+    "sell_total": 6
   },
   "current_levels": {
     "pivot": 77089.17,
@@ -101,7 +93,6 @@
   },
   "strategy": {
     "entry_criteria": [
-      "Above pivot",
       "Daily EMA stack (5>26>50)",
       "4h EMA stack (5>26>50)",
       "60m EMA stack (5>26>50)",
@@ -139,22 +130,20 @@
     },
     "condition_hit_rates": {
       "bars_in_window": 5880,
-      "buy: Above pivot": 50.78,
       "buy: Daily EMA stack": 11.92,
       "buy: 4h EMA stack": 22.76,
       "buy: 60m EMA stack": 23.57,
       "buy: Above prev-day high": 17.33,
       "buy: Above Daily R1": 13.79,
       "buy: Narrow CPR (trending bias)": 56.73,
-      "buy: ALL 7 (composite)": 1.463,
-      "sell: Below pivot": 49.22,
+      "buy: ALL 6 (composite)": 1.463,
       "sell: Daily EMA stack": 29.32,
       "sell: 4h EMA stack": 22.7,
       "sell: 60m EMA stack": 23.13,
       "sell: Below prev-day low": 16.36,
       "sell: Below Daily S1": 12.99,
       "sell: Narrow CPR (trending bias)": 56.73,
-      "sell: ALL 7 (composite)": 1.99
+      "sell: ALL 6 (composite)": 1.99
     },
     "trades": [
       {
