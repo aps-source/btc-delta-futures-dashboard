@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>BTC Perpetual Futures — Daily/1h/15m EMA Stack Strategy</title>
+<title>BTC Perpetual Futures — EMA Stack + Pivot/R1 Strategy</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -212,15 +212,15 @@
 <div class="wrap">
   <header>
     <div class="eyebrow">Delta Exchange · BTCUSDT Perpetual Futures</div>
-    <h1>Triple-Timeframe EMA Stack Strategy</h1>
-    <div class="strategy-line">Long/short BTC futures when Daily, 1h and 15m EMA(5&gt;26&gt;50) stacks all agree. Exits on a 15m close back through a dedicated 15-period EMA. Pivot/R1/S1, prev-day breakout and Narrow-CPR are shown below as reference levels only — none of them gate a signal.</div>
+    <h1>EMA Stack + Pivot/R1 Strategy</h1>
+    <div class="strategy-line">Long/short BTC futures when Daily, 4h and 60m EMA(5&gt;26&gt;50) stacks, the Daily pivot/R1 and previous-day breakout all agree. Exits on a 60m close back through a dedicated 60-period EMA. Narrow CPR is shown below as a reference level only — it does not gate a signal.</div>
     <div class="live-badge"><span class="dot dot-live" id="live-dot"></span><span id="live-text">Loading…</span></div>
   </header>
 
   <div class="stat-strip" id="top-stats"></div>
 
   <div class="card" id="checklist-card">
-    <h2>Current signal — as of last closed 15m bar</h2>
+    <h2>Current signal — as of last closed 60m bar</h2>
     <div id="position-banner-slot"></div>
     <div class="checklist-grid">
       <div>
@@ -281,8 +281,8 @@
   </div>
 
   <footer>
-    Candle data: Delta Exchange public history API (<code>/v2/history/candles</code>), BTCUSDT perpetual futures, 1d/1h/15m resolutions, UTC calendar days.
-    No-repaint: Daily/1h/pivot/CPR levels always use the previous FULLY CLOSED period, held flat until the next period closes.
+    Candle data: Delta Exchange public history API (<code>/v2/history/candles</code>), BTCUSDT perpetual futures, 1d/4h/1h resolutions, UTC calendar days.
+    No-repaint: Daily/4h/pivot/CPR levels always use the previous FULLY CLOSED period, held flat until the next period closes.
     P&amp;L is measured in raw USD points on the underlying (long = long the future, short = short the future) — <b>no funding-rate carry, fees, or slippage are modeled</b>, so real returns will differ from this proxy.
     Single position at a time; a signal on the opposite side while a position is open is ignored until that position exits.
     This page fetches <code>state.json</code> from the same origin every 60s — refresh comes from a scheduled local tick (<code>live_tick.py</code>), not a live exchange connection to your browser.
@@ -330,7 +330,7 @@ function renderLiveBadge(d) {
   const forming = d.live_price.is_forming_bar;
   dot.className = "dot dot-live";
   document.getElementById("live-text").innerHTML =
-    `Last closed 15m bar <b>${fmtDate(d.last_closed_bar)}</b> · updated <b>${fmtDate(d.generated_at)}</b>`;
+    `Last closed 60m bar <b>${fmtDate(d.last_closed_bar)}</b> · updated <b>${fmtDate(d.generated_at)}</b>`;
 }
 
 function critRow(label, met, side) {
@@ -362,9 +362,9 @@ function renderChecklist(d) {
     ["Pivot", l.pivot], ["R1", l.r1], ["S1", l.s1], ["Prev-day High", l.prevDayHigh], ["Prev-day Low", l.prevDayLow],
     ["Daily CPR width%", l.dailyCPR_width_pct], ["Narrow CPR", l.isNarrowCPR ? "Yes" : "No"],
     ["EMA5/26/50 (D)", `${fmt(l.emaD5)} / ${fmt(l.emaD26)} / ${fmt(l.emaD50)}`],
-    ["EMA5/26/50 (1h)", `${fmt(l.ema1h5)} / ${fmt(l.ema1h26)} / ${fmt(l.ema1h50)}`],
-    ["EMA5/26/50 (15m)", `${fmt(l.ema15m5)} / ${fmt(l.ema15m26)} / ${fmt(l.ema15m50)}`],
-    ["Exit EMA-15 (15m)", fmt(l.ema15m15)],
+    ["EMA5/26/50 (4h)", `${fmt(l.ema4h5)} / ${fmt(l.ema4h26)} / ${fmt(l.ema4h50)}`],
+    ["EMA5/26/50 (60m)", `${fmt(l.ema1h5)} / ${fmt(l.ema1h26)} / ${fmt(l.ema1h50)}`],
+    ["Exit EMA-60 (60m)", fmt(l.ema1h60)],
   ].map(([label, val]) => `<span>${label} <b>${val}</b></span>`).join("");
 }
 
