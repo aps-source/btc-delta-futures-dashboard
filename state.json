@@ -1,28 +1,21 @@
 {
-  "generated_at": "2026-09-04T09:39:28.660911+00:00",
+  "generated_at": "2026-09-05T06:39:32.324395+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-04T08:00:00+00:00",
+  "last_closed_bar": "2026-09-05T05:00:00+00:00",
   "live_price": {
-    "time": "2026-09-04T09:00:00+00:00",
-    "price": 81209.5,
+    "time": "2026-09-05T06:00:00+00:00",
+    "price": 79591.0,
     "is_forming_bar": true
   },
   "position": {
-    "direction": "LONG",
-    "entry_time": "2026-09-03T16:00:00+00:00",
-    "entry_price": 80808.0,
-    "mark_price": 80578.5,
-    "unrealized_points": -229.5,
-    "unrealized_pct": -0.284,
-    "bars_held": 16,
-    "status": "OPEN"
+    "status": "FLAT"
   },
   "current_conditions": {
     "buy": [
       {
         "label": "Above pivot",
-        "met": true
+        "met": false
       },
       {
         "label": "Daily EMA stack",
@@ -30,7 +23,7 @@
       },
       {
         "label": "4h EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "60m EMA stack",
@@ -45,12 +38,12 @@
         "met": false
       }
     ],
-    "buy_count": 3,
+    "buy_count": 1,
     "buy_total": 6,
     "sell": [
       {
         "label": "Below pivot",
-        "met": false
+        "met": true
       },
       {
         "label": "Daily EMA stack",
@@ -66,37 +59,37 @@
       },
       {
         "label": "Below prev-day low",
-        "met": false
+        "met": true
       },
       {
         "label": "Below Daily S1",
-        "met": false
+        "met": true
       }
     ],
-    "sell_count": 0,
+    "sell_count": 3,
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 79670.33,
-    "r1": 82390.17,
-    "s1": 78088.17,
-    "prevDayHigh": 81252.5,
-    "prevDayLow": 76950.5,
-    "dailyCPR_pivot": 79670.33,
-    "dailyCPR_tc": 80239.17,
-    "dailyCPR_bc": 79101.5,
-    "dailyCPR_width_pct": 1.43,
-    "isNarrowCPR": false,
-    "emaD5": 78745.12,
-    "emaD26": 73857.2,
-    "emaD50": 70676.44,
-    "ema4h5": 80546.51,
-    "ema4h26": 78848.2,
-    "ema4h50": 78192.43,
-    "ema1h5": 80784.95,
-    "ema1h26": 80227.02,
-    "ema1h50": 79447.08,
-    "ema1h60": 79251.69
+    "pivot": 80998.5,
+    "r1": 81240.0,
+    "s1": 80660.5,
+    "prevDayHigh": 81336.5,
+    "prevDayLow": 80757.0,
+    "dailyCPR_pivot": 80998.5,
+    "dailyCPR_tc": 81046.75,
+    "dailyCPR_bc": 80950.25,
+    "dailyCPR_width_pct": 0.12,
+    "isNarrowCPR": true,
+    "emaD5": 79464.08,
+    "emaD26": 74379.04,
+    "emaD50": 71077.45,
+    "ema4h5": 79785.0,
+    "ema4h26": 79143.06,
+    "ema4h50": 78481.32,
+    "ema1h5": 79527.71,
+    "ema1h26": 79755.35,
+    "ema1h50": 79580.73,
+    "ema1h60": 79473.14
   },
   "strategy": {
     "entry_criteria": [
@@ -657,32 +650,42 @@
   "live": {
     "live_start": "2026-09-03T00:00:00+00:00",
     "summary": {
-      "count": 0,
+      "count": 1,
       "wins": 0,
-      "losses": 0,
-      "win_rate": null,
-      "total_points": 0.0,
-      "avg_points": null,
-      "best": null,
-      "worst": null,
-      "avg_bars_held": null,
-      "avg_pct": null,
-      "total_pct": null,
-      "best_pct": null,
-      "worst_pct": null,
-      "long_count": 0,
+      "losses": 1,
+      "win_rate": 0.0,
+      "total_points": -1451.5,
+      "avg_points": -1451.5,
+      "best": -1451.5,
+      "worst": -1451.5,
+      "avg_bars_held": 20.0,
+      "avg_pct": -1.796,
+      "total_pct": -1.8,
+      "best_pct": -1.796,
+      "worst_pct": -1.796,
+      "long_count": 1,
       "short_count": 0
     },
-    "trades": [],
-    "equity_curve": [],
-    "open_trade": {
-      "direction": "LONG",
-      "entry_time": "2026-09-03T16:00:00+00:00",
-      "entry_price": 80808.0,
-      "mark_price": 80578.5,
-      "unrealized_points": -229.5,
-      "unrealized_pct": -0.284,
-      "bars_held": 16
-    }
+    "trades": [
+      {
+        "direction": "LONG",
+        "entry_time": "2026-09-03T16:00:00+00:00",
+        "entry_price": 80808.0,
+        "exit_time": "2026-09-04T13:00:00+00:00",
+        "exit_price": 79356.5,
+        "points": -1451.5,
+        "pct": -1.796,
+        "bars_held": 20
+      }
+    ],
+    "equity_curve": [
+      {
+        "time": "2026-09-04T13:00:00+00:00",
+        "cum_points": -1451.5,
+        "trade_points": -1451.5,
+        "direction": "LONG"
+      }
+    ],
+    "open_trade": null
   }
 }
