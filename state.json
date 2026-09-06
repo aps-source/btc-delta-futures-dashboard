@@ -1,36 +1,29 @@
 {
-  "generated_at": "2026-09-06T15:54:30.646024+00:00",
+  "generated_at": "2026-09-06T16:09:31.363795+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-06T14:00:00+00:00",
+  "last_closed_bar": "2026-09-06T15:00:00+00:00",
   "live_price": {
-    "time": "2026-09-06T15:00:00+00:00",
-    "price": 79431.0,
+    "time": "2026-09-06T16:00:00+00:00",
+    "price": 79629.5,
     "is_forming_bar": true
   },
   "position": {
-    "direction": "LONG",
-    "entry_time": "2026-09-06T00:00:00+00:00",
-    "entry_price": 79901.0,
-    "mark_price": 79793.0,
-    "unrealized_points": -108.0,
-    "unrealized_pct": -0.135,
-    "bars_held": 14,
-    "status": "OPEN"
+    "status": "FLAT"
   },
   "current_conditions": {
     "buy": [
       {
         "label": "Above pivot",
-        "met": true
+        "met": false
       },
       {
         "label": "Daily EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "4h EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "60m EMA stack",
@@ -38,19 +31,19 @@
       },
       {
         "label": "Above prev-day high",
-        "met": true
+        "met": false
       },
       {
         "label": "Above Daily R1",
-        "met": true
+        "met": false
       }
     ],
-    "buy_count": 5,
+    "buy_count": 0,
     "buy_total": 6,
     "sell": [
       {
         "label": "Below pivot",
-        "met": false
+        "met": true
       },
       {
         "label": "Daily EMA stack",
@@ -70,10 +63,10 @@
       },
       {
         "label": "Below Daily S1",
-        "met": false
+        "met": true
       }
     ],
-    "sell_count": 0,
+    "sell_count": 2,
     "sell_total": 6
   },
   "current_levels": {
@@ -93,10 +86,10 @@
     "ema4h5": 79696.31,
     "ema4h26": 79389.35,
     "ema4h50": 78808.37,
-    "ema1h5": 79826.12,
-    "ema1h26": 79798.19,
-    "ema1h50": 79731.16,
-    "ema1h60": 79679.39
+    "ema1h5": 79694.42,
+    "ema1h26": 79770.99,
+    "ema1h50": 79719.39,
+    "ema1h60": 79671.25
   },
   "strategy": {
     "entry_criteria": [
@@ -657,20 +650,20 @@
   "live": {
     "live_start": "2026-09-03T00:00:00+00:00",
     "summary": {
-      "count": 1,
+      "count": 2,
       "wins": 0,
-      "losses": 1,
+      "losses": 2,
       "win_rate": 0.0,
-      "total_points": -1451.5,
-      "avg_points": -1451.5,
-      "best": -1451.5,
+      "total_points": -1921.5,
+      "avg_points": -960.75,
+      "best": -470.0,
       "worst": -1451.5,
-      "avg_bars_held": 20.0,
-      "avg_pct": -1.796,
-      "total_pct": -1.8,
-      "best_pct": -1.796,
+      "avg_bars_held": 17.0,
+      "avg_pct": -1.192,
+      "total_pct": -2.38,
+      "best_pct": -0.588,
       "worst_pct": -1.796,
-      "long_count": 1,
+      "long_count": 2,
       "short_count": 0
     },
     "trades": [
@@ -683,6 +676,16 @@
         "points": -1451.5,
         "pct": -1.796,
         "bars_held": 20
+      },
+      {
+        "direction": "LONG",
+        "entry_time": "2026-09-06T00:00:00+00:00",
+        "entry_price": 79901.0,
+        "exit_time": "2026-09-06T15:00:00+00:00",
+        "exit_price": 79431.0,
+        "points": -470.0,
+        "pct": -0.588,
+        "bars_held": 14
       }
     ],
     "equity_curve": [
@@ -691,16 +694,14 @@
         "cum_points": -1451.5,
         "trade_points": -1451.5,
         "direction": "LONG"
+      },
+      {
+        "time": "2026-09-06T15:00:00+00:00",
+        "cum_points": -1921.5,
+        "trade_points": -470.0,
+        "direction": "LONG"
       }
     ],
-    "open_trade": {
-      "direction": "LONG",
-      "entry_time": "2026-09-06T00:00:00+00:00",
-      "entry_price": 79901.0,
-      "mark_price": 79793.0,
-      "unrealized_points": -108.0,
-      "unrealized_pct": -0.135,
-      "bars_held": 14
-    }
+    "open_trade": null
   }
 }
