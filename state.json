@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-06T14:54:30.755055+00:00",
+  "generated_at": "2026-09-06T15:09:31.093765+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-06T13:00:00+00:00",
+  "last_closed_bar": "2026-09-06T14:00:00+00:00",
   "live_price": {
-    "time": "2026-09-06T14:00:00+00:00",
-    "price": 79793.0,
+    "time": "2026-09-06T15:00:00+00:00",
+    "price": 79431.0,
     "is_forming_bar": true
   },
   "position": {
     "direction": "LONG",
     "entry_time": "2026-09-06T00:00:00+00:00",
     "entry_price": 79901.0,
-    "mark_price": 79857.5,
-    "unrealized_points": -43.5,
-    "unrealized_pct": -0.054,
-    "bars_held": 13,
+    "mark_price": 79793.0,
+    "unrealized_points": -108.0,
+    "unrealized_pct": -0.135,
+    "bars_held": 14,
     "status": "OPEN"
   },
   "current_conditions": {
@@ -34,7 +34,7 @@
       },
       {
         "label": "60m EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "Above prev-day high",
@@ -45,7 +45,7 @@
         "met": true
       }
     ],
-    "buy_count": 6,
+    "buy_count": 5,
     "buy_total": 6,
     "sell": [
       {
@@ -93,10 +93,10 @@
     "ema4h5": 79696.31,
     "ema4h26": 79389.35,
     "ema4h50": 78808.37,
-    "ema1h5": 79842.69,
-    "ema1h26": 79798.6,
-    "ema1h50": 79728.64,
-    "ema1h60": 79675.54
+    "ema1h5": 79826.12,
+    "ema1h26": 79798.19,
+    "ema1h50": 79731.16,
+    "ema1h60": 79679.39
   },
   "strategy": {
     "entry_criteria": [
@@ -697,10 +697,10 @@
       "direction": "LONG",
       "entry_time": "2026-09-06T00:00:00+00:00",
       "entry_price": 79901.0,
-      "mark_price": 79857.5,
-      "unrealized_points": -43.5,
-      "unrealized_pct": -0.054,
-      "bars_held": 13
+      "mark_price": 79793.0,
+      "unrealized_points": -108.0,
+      "unrealized_pct": -0.135,
+      "bars_held": 14
     }
   }
 }
