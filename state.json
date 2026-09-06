@@ -1,21 +1,28 @@
 {
-  "generated_at": "2026-09-05T17:39:28.969964+00:00",
+  "generated_at": "2026-09-06T07:16:40.073854+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-05T16:00:00+00:00",
+  "last_closed_bar": "2026-09-06T06:00:00+00:00",
   "live_price": {
-    "time": "2026-09-05T17:00:00+00:00",
-    "price": 80105.5,
+    "time": "2026-09-06T07:00:00+00:00",
+    "price": 79664.5,
     "is_forming_bar": true
   },
   "position": {
-    "status": "FLAT"
+    "direction": "LONG",
+    "entry_time": "2026-09-06T00:00:00+00:00",
+    "entry_price": 79901.0,
+    "mark_price": 79664.5,
+    "unrealized_points": -236.5,
+    "unrealized_pct": -0.296,
+    "bars_held": 6,
+    "status": "OPEN"
   },
   "current_conditions": {
     "buy": [
       {
         "label": "Above pivot",
-        "met": false
+        "met": true
       },
       {
         "label": "Daily EMA stack",
@@ -23,7 +30,7 @@
       },
       {
         "label": "4h EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "60m EMA stack",
@@ -43,7 +50,7 @@
     "sell": [
       {
         "label": "Below pivot",
-        "met": true
+        "met": false
       },
       {
         "label": "Daily EMA stack",
@@ -59,37 +66,37 @@
       },
       {
         "label": "Below prev-day low",
-        "met": true
+        "met": false
       },
       {
         "label": "Below Daily S1",
-        "met": true
+        "met": false
       }
     ],
-    "sell_count": 3,
+    "sell_count": 0,
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 80998.5,
-    "r1": 81240.0,
-    "s1": 80660.5,
-    "prevDayHigh": 81336.5,
-    "prevDayLow": 80757.0,
-    "dailyCPR_pivot": 80998.5,
-    "dailyCPR_tc": 81046.75,
-    "dailyCPR_bc": 80950.25,
-    "dailyCPR_width_pct": 0.12,
+    "pivot": 79560.0,
+    "r1": 79705.0,
+    "s1": 79446.0,
+    "prevDayHigh": 79674.0,
+    "prevDayLow": 79415.0,
+    "dailyCPR_pivot": 79560.0,
+    "dailyCPR_tc": 79575.5,
+    "dailyCPR_bc": 79544.5,
+    "dailyCPR_width_pct": 0.04,
     "isNarrowCPR": true,
-    "emaD5": 79464.08,
-    "emaD26": 74379.04,
-    "emaD50": 71077.45,
-    "ema4h5": 79658.31,
-    "ema4h26": 79237.26,
-    "ema4h50": 78607.74,
-    "ema1h5": 79642.91,
-    "ema1h26": 79673.65,
-    "ema1h50": 79591.05,
-    "ema1h60": 79514.94
+    "emaD5": 79506.39,
+    "emaD26": 74765.11,
+    "emaD50": 71411.31,
+    "ema4h5": 79736.07,
+    "ema4h26": 79343.57,
+    "ema4h50": 78737.05,
+    "ema1h5": 79840.02,
+    "ema1h26": 79796.64,
+    "ema1h50": 79707.15,
+    "ema1h60": 79644.42
   },
   "strategy": {
     "entry_criteria": [
@@ -686,6 +693,14 @@
         "direction": "LONG"
       }
     ],
-    "open_trade": null
+    "open_trade": {
+      "direction": "LONG",
+      "entry_time": "2026-09-06T00:00:00+00:00",
+      "entry_price": 79901.0,
+      "mark_price": 79664.5,
+      "unrealized_points": -236.5,
+      "unrealized_pct": -0.296,
+      "bars_held": 6
+    }
   }
 }
