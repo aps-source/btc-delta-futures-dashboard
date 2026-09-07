@@ -1,15 +1,22 @@
 {
-  "generated_at": "2026-09-06T19:39:30.542594+00:00",
+  "generated_at": "2026-09-07T02:54:06.744713+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-06T18:00:00+00:00",
+  "last_closed_bar": "2026-09-07T01:00:00+00:00",
   "live_price": {
-    "time": "2026-09-06T19:00:00+00:00",
-    "price": 79841.5,
+    "time": "2026-09-07T02:00:00+00:00",
+    "price": 80216.5,
     "is_forming_bar": true
   },
   "position": {
-    "status": "FLAT"
+    "direction": "LONG",
+    "entry_time": "2026-09-06T20:00:00+00:00",
+    "entry_price": 79861.0,
+    "mark_price": 79948.0,
+    "unrealized_points": 87.0,
+    "unrealized_pct": 0.109,
+    "bars_held": 5,
+    "status": "OPEN"
   },
   "current_conditions": {
     "buy": [
@@ -35,10 +42,10 @@
       },
       {
         "label": "Above Daily R1",
-        "met": false
+        "met": true
       }
     ],
-    "buy_count": 2,
+    "buy_count": 3,
     "buy_total": 6,
     "sell": [
       {
@@ -70,26 +77,26 @@
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 79560.0,
-    "r1": 79705.0,
-    "s1": 79446.0,
-    "prevDayHigh": 79674.0,
-    "prevDayLow": 79415.0,
-    "dailyCPR_pivot": 79560.0,
-    "dailyCPR_tc": 79575.5,
-    "dailyCPR_bc": 79544.5,
-    "dailyCPR_width_pct": 0.04,
+    "pivot": 79792.5,
+    "r1": 79923.5,
+    "s1": 79533.5,
+    "prevDayHigh": 80051.5,
+    "prevDayLow": 79661.5,
+    "dailyCPR_pivot": 79792.5,
+    "dailyCPR_tc": 79856.5,
+    "dailyCPR_bc": 79728.5,
+    "dailyCPR_width_pct": 0.16,
     "isNarrowCPR": true,
-    "emaD5": 79506.39,
-    "emaD26": 74765.11,
-    "emaD50": 71411.31,
-    "ema4h5": 79757.04,
-    "ema4h26": 79425.58,
-    "ema4h50": 78850.33,
-    "ema1h5": 79661.4,
-    "ema1h26": 79744.63,
-    "ema1h50": 79710.71,
-    "ema1h60": 79668.52
+    "emaD5": 79559.09,
+    "emaD26": 75128.03,
+    "emaD50": 71734.97,
+    "ema4h5": 79958.68,
+    "ema4h26": 79515.23,
+    "ema4h50": 78942.31,
+    "ema1h5": 80096.89,
+    "ema1h26": 79881.84,
+    "ema1h50": 79797.18,
+    "ema1h60": 79750.62
   },
   "strategy": {
     "entry_criteria": [
@@ -702,6 +709,14 @@
         "direction": "LONG"
       }
     ],
-    "open_trade": null
+    "open_trade": {
+      "direction": "LONG",
+      "entry_time": "2026-09-06T20:00:00+00:00",
+      "entry_price": 79861.0,
+      "mark_price": 79948.0,
+      "unrealized_points": 87.0,
+      "unrealized_pct": 0.109,
+      "bars_held": 5
+    }
   }
 }
