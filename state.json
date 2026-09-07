@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-09-07T03:54:29.816943+00:00",
+  "generated_at": "2026-09-07T04:09:33.427884+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-07T02:00:00+00:00",
+  "last_closed_bar": "2026-09-07T03:00:00+00:00",
   "live_price": {
-    "time": "2026-09-07T03:00:00+00:00",
-    "price": 79945.5,
+    "time": "2026-09-07T04:00:00+00:00",
+    "price": 79556.0,
     "is_forming_bar": true
   },
   "position": {
     "direction": "LONG",
     "entry_time": "2026-09-06T20:00:00+00:00",
     "entry_price": 79861.0,
-    "mark_price": 80216.5,
-    "unrealized_points": 355.5,
-    "unrealized_pct": 0.445,
-    "bars_held": 6,
+    "mark_price": 79945.5,
+    "unrealized_points": 84.5,
+    "unrealized_pct": 0.106,
+    "bars_held": 7,
     "status": "OPEN"
   },
   "current_conditions": {
@@ -30,22 +30,22 @@
       },
       {
         "label": "4h EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "60m EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "Above prev-day high",
-        "met": true
+        "met": false
       },
       {
         "label": "Above Daily R1",
         "met": true
       }
     ],
-    "buy_count": 6,
+    "buy_count": 3,
     "buy_total": 6,
     "sell": [
       {
@@ -93,10 +93,10 @@
     "ema4h5": 79958.68,
     "ema4h26": 79515.23,
     "ema4h50": 78942.31,
-    "ema1h5": 80136.76,
-    "ema1h26": 79906.63,
-    "ema1h50": 79813.63,
-    "ema1h60": 79765.9
+    "ema1h5": 80073.01,
+    "ema1h26": 79909.51,
+    "ema1h50": 79818.8,
+    "ema1h60": 79771.79
   },
   "strategy": {
     "entry_criteria": [
@@ -713,10 +713,10 @@
       "direction": "LONG",
       "entry_time": "2026-09-06T20:00:00+00:00",
       "entry_price": 79861.0,
-      "mark_price": 80216.5,
-      "unrealized_points": 355.5,
-      "unrealized_pct": 0.445,
-      "bars_held": 6
+      "mark_price": 79945.5,
+      "unrealized_points": 84.5,
+      "unrealized_pct": 0.106,
+      "bars_held": 7
     }
   }
 }
