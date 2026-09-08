@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-08T13:54:29.789205+00:00",
+  "generated_at": "2026-09-08T14:09:30.459907+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-08T12:00:00+00:00",
+  "last_closed_bar": "2026-09-08T13:00:00+00:00",
   "live_price": {
-    "time": "2026-09-08T13:00:00+00:00",
-    "price": 78455.0,
+    "time": "2026-09-08T14:00:00+00:00",
+    "price": 77910.5,
     "is_forming_bar": true
   },
   "position": {
@@ -55,7 +55,7 @@
       },
       {
         "label": "60m EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "Below prev-day low",
@@ -66,7 +66,7 @@
         "met": true
       }
     ],
-    "sell_count": 4,
+    "sell_count": 3,
     "sell_total": 6
   },
   "current_levels": {
@@ -86,10 +86,10 @@
     "ema4h5": 78902.09,
     "ema4h26": 79322.85,
     "ema4h50": 79010.97,
-    "ema1h5": 78419.67,
-    "ema1h26": 78891.9,
-    "ema1h50": 79161.45,
-    "ema1h60": 79219.94
+    "ema1h5": 78431.44,
+    "ema1h26": 78859.53,
+    "ema1h50": 79133.75,
+    "ema1h60": 79194.86
   },
   "strategy": {
     "entry_criteria": [
