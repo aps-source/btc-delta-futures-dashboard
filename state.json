@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-08T05:54:29.085594+00:00",
+  "generated_at": "2026-09-08T06:09:29.251233+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-08T04:00:00+00:00",
+  "last_closed_bar": "2026-09-08T05:00:00+00:00",
   "live_price": {
-    "time": "2026-09-08T05:00:00+00:00",
-    "price": 78707.5,
+    "time": "2026-09-08T06:00:00+00:00",
+    "price": 78464.5,
     "is_forming_bar": true
   },
   "position": {
@@ -86,10 +86,10 @@
     "ema4h5": 79152.34,
     "ema4h26": 79420.22,
     "ema4h50": 79033.39,
-    "ema1h5": 79030.46,
-    "ema1h26": 79270.04,
-    "ema1h50": 79428.39,
-    "ema1h60": 79453.78
+    "ema1h5": 78922.81,
+    "ema1h26": 79228.37,
+    "ema1h50": 79400.12,
+    "ema1h60": 79429.31
   },
   "strategy": {
     "entry_criteria": [
