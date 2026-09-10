@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-09T15:24:28.793915+00:00",
+  "generated_at": "2026-09-10T02:39:33.827583+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-09T14:00:00+00:00",
+  "last_closed_bar": "2026-09-10T01:00:00+00:00",
   "live_price": {
-    "time": "2026-09-09T15:00:00+00:00",
-    "price": 78463.5,
+    "time": "2026-09-10T02:00:00+00:00",
+    "price": 78082.0,
     "is_forming_bar": true
   },
   "position": {
@@ -55,7 +55,7 @@
       },
       {
         "label": "60m EMA stack",
-        "met": false
+        "met": true
       },
       {
         "label": "Below prev-day low",
@@ -63,33 +63,33 @@
       },
       {
         "label": "Below Daily S1",
-        "met": false
+        "met": true
       }
     ],
-    "sell_count": 2,
+    "sell_count": 4,
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 79099.83,
-    "r1": 79255.67,
-    "s1": 78788.17,
-    "prevDayHigh": 79411.5,
-    "prevDayLow": 78944.0,
-    "dailyCPR_pivot": 79099.83,
-    "dailyCPR_tc": 79177.75,
-    "dailyCPR_bc": 79021.92,
-    "dailyCPR_width_pct": 0.2,
+    "pivot": 78655.17,
+    "r1": 78850.83,
+    "s1": 78494.83,
+    "prevDayHigh": 78815.5,
+    "prevDayLow": 78459.5,
+    "dailyCPR_pivot": 78655.17,
+    "dailyCPR_tc": 78672.83,
+    "dailyCPR_bc": 78637.5,
+    "dailyCPR_width_pct": 0.04,
     "isNarrowCPR": true,
-    "emaD5": 79500.15,
-    "emaD26": 75759.7,
-    "emaD50": 72337.24,
-    "ema4h5": 78834.91,
-    "ema4h26": 79097.79,
-    "ema4h50": 78945.06,
-    "ema1h5": 79113.86,
-    "ema1h26": 78935.89,
-    "ema1h50": 78973.48,
-    "ema1h60": 79009.33
+    "emaD5": 79230.27,
+    "emaD26": 75976.79,
+    "emaD50": 72586.39,
+    "ema4h5": 78547.68,
+    "ema4h26": 78980.39,
+    "ema4h50": 78899.37,
+    "ema1h5": 78129.26,
+    "ema1h26": 78536.99,
+    "ema1h50": 78719.48,
+    "ema1h60": 78780.59
   },
   "strategy": {
     "entry_criteria": [
