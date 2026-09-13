@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-12T18:09:29.042846+00:00",
+  "generated_at": "2026-09-13T14:10:26.759888+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-12T17:00:00+00:00",
+  "last_closed_bar": "2026-09-13T13:00:00+00:00",
   "live_price": {
-    "time": "2026-09-12T18:00:00+00:00",
-    "price": 77200.5,
+    "time": "2026-09-13T14:00:00+00:00",
+    "price": 76830.5,
     "is_forming_bar": true
   },
   "position": {
@@ -15,7 +15,7 @@
     "buy": [
       {
         "label": "Above pivot",
-        "met": true
+        "met": false
       },
       {
         "label": "Daily EMA stack",
@@ -31,19 +31,19 @@
       },
       {
         "label": "Above prev-day high",
-        "met": true
+        "met": false
       },
       {
         "label": "Above Daily R1",
-        "met": true
+        "met": false
       }
     ],
-    "buy_count": 3,
+    "buy_count": 0,
     "buy_total": 6,
     "sell": [
       {
         "label": "Below pivot",
-        "met": false
+        "met": true
       },
       {
         "label": "Daily EMA stack",
@@ -51,7 +51,7 @@
       },
       {
         "label": "4h EMA stack",
-        "met": false
+        "met": true
       },
       {
         "label": "60m EMA stack",
@@ -59,37 +59,37 @@
       },
       {
         "label": "Below prev-day low",
-        "met": false
+        "met": true
       },
       {
         "label": "Below Daily S1",
-        "met": false
+        "met": true
       }
     ],
-    "sell_count": 0,
+    "sell_count": 4,
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 76772.5,
-    "r1": 77004.0,
-    "s1": 76569.5,
-    "prevDayHigh": 76975.5,
-    "prevDayLow": 76541.0,
-    "dailyCPR_pivot": 76772.5,
-    "dailyCPR_tc": 76786.75,
-    "dailyCPR_bc": 76758.25,
+    "pivot": 77249.17,
+    "r1": 77325.83,
+    "s1": 77203.83,
+    "prevDayHigh": 77294.5,
+    "prevDayLow": 77172.5,
+    "dailyCPR_pivot": 77249.17,
+    "dailyCPR_tc": 77264.83,
+    "dailyCPR_bc": 77233.5,
     "dailyCPR_width_pct": 0.04,
     "isNarrowCPR": true,
-    "emaD5": 78165.34,
-    "emaD26": 76182.23,
-    "emaD50": 72958.73,
-    "ema4h5": 77262.36,
-    "ema4h26": 77773.55,
-    "ema4h50": 78144.74,
-    "ema1h5": 77323.28,
-    "ema1h26": 77296.73,
-    "ema1h50": 77408.55,
-    "ema1h60": 77480.01
+    "emaD5": 77870.39,
+    "emaD26": 76263.59,
+    "emaD50": 73128.21,
+    "ema4h5": 77051.15,
+    "ema4h26": 77560.07,
+    "ema4h50": 77958.01,
+    "ema1h5": 76786.83,
+    "ema1h26": 77042.72,
+    "ema1h50": 77189.4,
+    "ema1h60": 77254.84
   },
   "strategy": {
     "entry_criteria": [
