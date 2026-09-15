@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-14T18:39:31.451596+00:00",
+  "generated_at": "2026-09-15T03:03:43.593424+00:00",
   "symbol": "BTCUSDT",
   "exchange": "Delta Exchange (BTCUSDT perpetual futures)",
-  "last_closed_bar": "2026-09-14T17:00:00+00:00",
+  "last_closed_bar": "2026-09-15T02:00:00+00:00",
   "live_price": {
-    "time": "2026-09-14T18:00:00+00:00",
-    "price": 78921.5,
+    "time": "2026-09-15T03:00:00+00:00",
+    "price": 77770.5,
     "is_forming_bar": true
   },
   "position": {
@@ -27,18 +27,18 @@
       },
       {
         "label": "60m EMA stack",
-        "met": true
+        "met": false
       },
       {
         "label": "Above prev-day high",
-        "met": true
+        "met": false
       },
       {
         "label": "Above Daily R1",
-        "met": true
+        "met": false
       }
     ],
-    "buy_count": 5,
+    "buy_count": 2,
     "buy_total": 6,
     "sell": [
       {
@@ -70,26 +70,26 @@
     "sell_total": 6
   },
   "current_levels": {
-    "pivot": 76882.83,
-    "r1": 77219.67,
-    "s1": 76493.67,
-    "prevDayHigh": 77272.0,
-    "prevDayLow": 76546.0,
-    "dailyCPR_pivot": 76882.83,
-    "dailyCPR_tc": 76909.0,
-    "dailyCPR_bc": 76856.67,
-    "dailyCPR_width_pct": 0.07,
+    "pivot": 77252.67,
+    "r1": 78136.33,
+    "s1": 76695.33,
+    "prevDayHigh": 77810.0,
+    "prevDayLow": 76369.0,
+    "dailyCPR_pivot": 77252.67,
+    "dailyCPR_tc": 77415.83,
+    "dailyCPR_bc": 77089.5,
+    "dailyCPR_width_pct": 0.42,
     "isNarrowCPR": true,
-    "emaD5": 77523.76,
-    "emaD26": 76305.58,
-    "emaD50": 73273.4,
-    "ema4h5": 77813.81,
-    "ema4h26": 77545.14,
-    "ema4h50": 77842.29,
-    "ema1h5": 78579.05,
-    "ema1h26": 77829.69,
-    "ema1h50": 77589.52,
-    "ema1h60": 77558.57
+    "emaD5": 77542.18,
+    "emaD26": 76399.91,
+    "emaD50": 73442.24,
+    "ema4h5": 78131.25,
+    "ema4h26": 77670.37,
+    "ema4h50": 77887.28,
+    "ema1h5": 78075.37,
+    "ema1h26": 78105.31,
+    "ema1h50": 77842.16,
+    "ema1h60": 77785.23
   },
   "strategy": {
     "entry_criteria": [
